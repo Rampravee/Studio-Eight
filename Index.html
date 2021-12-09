@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Studio Eight</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        .container{
+            width: 100%;
+            min-height: 100vh;
+            background-image: linear-gradient(45deg, #22046b, #e14e42);
+            color: #fff;
+            position: relative;
+        }
+        .navbar{
+            width: 90%;
+            height: 15vh;
+            margin: auto;
+            display: flex;
+            align-items: center;
+        }
+        .logo{
+            width: 130px;
+            cursor: pointer;
+        }
+        .menu-icon{
+            width: 30px;
+            cursor: pointer;
+            margin-left: 80px;
+        }
+        nav{
+            flex: 1;
+            text-align: right;
+        }
+        nav ul li{
+            list-style: none;
+            display: inline-block;
+            margin-left: 60px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 14px;
+            padding: 5px 2px;
+        }
+        nav ul li a:hover{
+            color: #e7c82f;
+        }
+        .row{
+            width: 80%;
+            min-height: 85vh;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .col{
+            margin: 20px 0;
+            flex-basis: 50%;
+            min-width: 300px;
+            height: 100%;
+            position: relative;
+        }
+        .text-box{
+            max-width: 400px;
+            margin-top: 100px;
+        }
+        .text-box h5{
+            color: #e7c82f;
+        }
+        .text-box h1{
+            font-size: 50px;
+            font-weight: 100;
+            letter-spacing: 3px;
+            line-height: 65px;
+        }
+        .gallery-box{
+            max-width: 400px;
+            position: relative;
+            margin: auto;
+        }
+        .gallery-box img{
+            width: 100%;
+            border: 10px solid rgba(225, 225, 225, 0.2);
+            box-sizing: border-box;
+        }
+        .gallery-box ul{
+            position: absolute;
+            right: -100px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .gallery-box ul li{
+            list-style: none;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 0 30px;
+            margin-bottom: 30px;
+            cursor: pointer;
+            position: relative;
+        }
+        .gallery-box .active{
+            color: #e7c82f;
+        }
+        .gallery-box ul li::after{
+            content: '';
+            width: 30px;
+            height: 2px;
+            background: #e7c82f;
+            position: absolute;
+            top: 8px;
+            left: -5px;
+        }
+        .gallery-box .active::after{
+            background: #e7c82f;
+        }
+        .small-icon1{
+            width: 15px;
+            position: absolute;
+            right: 200px;
+            top: -100px;
+            opacity: 0.3;
+        }
+        .small-icon2{
+            width: 25px;
+            position: absolute;
+            right: 200px;
+            bottom: -100px;
+            opacity: 0.3;
+        }
+        .small-icon3{
+            width: 25px;
+            position: absolute;
+            right: 50px;
+            top: 200px;
+            opacity: 0.5;
+            transform: rotate(45deg);
+        }
+        .small-icon4{
+            width: 250px;
+            position: absolute;
+            top: 120px;
+            left: -150px;
+            opacity: 0.3;
+        }
+        .small-icon5{
+            width: 25px;
+            position: absolute;
+            bottom: 60px;
+            left: 50px;
+            opacity: 0.3;
+        }
+        .ff{
+            text-align: center;
+        }
+        span{
+            color: #e7c82f;
+        }
+        .peter{
+            text-align: center;
+        }
+        .tt{
+            padding-right: 400px;
+            flex: 1;
+        }
+        .t2{
+            flex: 2;
+        }
+        .off{
+            display: flex;
+            flex: 2; 
+        }
+        fieldset{
+            width: 200px;
+            margin: auto;
+            border: none;
+        }
+        .dds{
+            background: url(https://i.gifer.com/Za9d.gif);
+        }
+        button{
+            width: 150px;
+            height: 50px;
+            border-radius: 4px;
+            font-weight: bold;
+            color: white;
+            background: #e7c82f;
+        }
+        button:hover{
+            background: #e14e42;
+        }
+        .of{
+            border-radius: 5px;
+            width: 450px;
+            height: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="logo.png" alt="" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="#abt">About</a></li>
+                    <li><a href="#office">Office</a></li>
+                    <li><a href="#hotels">Hotels</a></li>
+                    <li><a href="#game">Gaming</a></li>
+                    <li><a href="con.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <img src="menu.png" alt="" class="menu-icon">
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="text-box">
+                    <h5>Our Products</h5>
+                    <h1><b>Simplicity</b> <br> is the <b>ultimate</b> <br> sophistication</h1>
+                </div>
+                <img src="circle.png" alt="" class="small-icon1">
+                <img src="circle.png" alt="" class="small-icon2">
+                <img src="square.png" alt="" class="small-icon3">
+            </div>
+            <div class="col">
+                <div class="gallery-box">
+                    <img src="pic2.jpg" alt="">
+                    <ul>
+                        <li onmousedown="btn1()" id="btn">01</li>
+                        <li onmousedown="btn2()" id="btn active">02</li>
+                        <li onmousedown="btn3()" id="btn">03</li>
+                        <li onmousedown="btn4()" id="btn">04</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr id="abt"><br>
+        <h1 class="ff">Why Studio <span>Eight</span> ?</h1><br>
+        <hr><br>
+        <h4 class="peter">Hi we are from Studio <span>Eight</span> and we sell tables, chairs, lamp etc.. and we also have exclusive for buying a full set.</h4><br>
+        <h4 class="peter">We also have special offers for gamers🎮</h4><br>
+        <h4 class="peter">🎲Random purchase of full gaming set can win a Xbox..</h4><br>
+        <fieldset>
+        <img src="box.png" alt="" class="dds"><br>
+        </fieldset><br>
+        <hr id="office"><br>
+        <h1 class="ff"><b>Office</b</h1><br>
+        <hr><br>
+        <fieldset>
+        <h1 class="ff">The <span>gorgeously</span> table</h1>
+        <img src="off.png" alt="" class="off">
+        <h2 class="ff"><strike>₹10,000</strike> <br> ₹7,000 special offer for Studio <span>Eight</span> users.</h2><br>
+        <fieldset>
+        <a href="bn.html"><button>Buy Now</button></a>
+        </fieldset>
+        </fieldset><br>
+        <hr><br>
+        <fieldset>
+            <h1 class="ff">The <span>Revolving</span> chair</h1>
+            <img src="oc.png" alt="" class="off">
+            <h2 class="ff"><strike>₹7,000</strike> <br> ₹5,000 special offer for Studio <span>Eight</span> users.</h2><br>
+            <fieldset>
+                <a href="bn.html">
+                <button>Buy Now</button>
+                </a>
+                </fieldset>
+        </fieldset><br>
+        <hr><br>
+        <fieldset>
+            <h1 class="ff">The <span>HP</span> clicky</h1>
+            <img src="jj.png" alt="" class="off">
+            <h2 class="ff"><strike>₹1,500</strike> <br> ₹900 special offer for Studio <span>Eight</span> users.</h2><br>
+            <fieldset>
+                <a href="bn.html"><button>Buy Now</button></a>
+                </fieldset>
+        </fieldset><br>
+        <hr><br>
+        <fieldset>
+            <h1 class="ff">The <span>Logitech</span> fibro</h1>
+            <img src="om.png" alt="" class="off">
+            <h2 class="ff"><strike>₹900</strike> <br> ₹600 special offer for Studio <span>Eight</span> users.</h2><br>
+            <fieldset>
+                <a href="bn.html"><button>Buy Now</button></a>
+                </fieldset>
+        </fieldset><br>
+        <hr><br>
+        <fieldset>
+            <h1 class="ff">Exclusive offer on buying <span>full set</span></h1><br>
+            <img src="https://images.steelcase.com/image/upload/v1426880540/www.steelcase.com/12-0001608.jpg" alt="" class="of"><br><br>
+            <h2>₹7,000 + ₹5,000 + ₹900 + ₹600 = ₹13,500</h2>
+            <h2 class="ff">Use code <span>SE20</span> for ₹500 cashback</h2><br>
+            <fieldset>
+                <a href="bn.html"><button>Buy Now</button></a>
+                </fieldset>
+        </fieldset><br>
+        <hr id="hotels"><br>
+        <h1 class="ff"><b>Hotels</b></h1><br>
+        <hr><br>
+        <fieldset>
+        <h1 class="ff">The <span>solid surface</span> table</h1>
+        <img src="ht.png" alt="" class="off"><br>
+        <h2 class="ff"><strike>₹5,000</strike> <br> ₹4,000 special offer for Studio <span>Eight</span> users.</h2><br>
+        <fieldset>
+        <a href="bn.html"><button>Buy Now</button></a>
+        </fieldset>
+        </fieldset><br>
+        <hr><br>
+        <fieldset>
+            <h1 class="ff">The <span>Fluffy</span> chair</h1>
+            <img src="hc.png" alt="" class="off"><br>
+            <h2 class="ff"><strike>₹2,500</strike> <br> ₹1,500 special offer for Studio <span>Eight</span> users.</h2><br>
+            <fieldset>
+                <a href="bn.html"><button>Buy Now</button></a>
+                </fieldset>
+        </fieldset><br>
+        <hr><br>
+        <fieldset>
+            <h1 class="ff">The <span>pink</span> recto</h1>
+            <img src="hf.png" alt="" class="off">
+            <h2 class="ff"><strike>₹250</strike> <br> ₹100 special offer for Studio <span>Eight</span> users.</h2><br>
+            <fieldset>
+                <a href="bn.html"><button>Buy Now</button></a>
+                </fieldset>
+        </fieldset><br>
+        <hr><br>
+        <fieldset>
+            <h1 class="ff">The <span>warm</span> water</h1>
+            <img src="hg.png" alt="" class="off">
+            <h2 class="ff"><strike>₹600</strike> <br> ₹400 special offer for Studio <span>Eight</span> users.</h2><br>
+            <fieldset>
+                <a href="bn.html"><button>Buy Now</button></a>
+                </fieldset>
+        </fieldset><br>
+        <hr><br>
+        <fieldset>
+            <h1 class="ff">Exclusive offer on buying <span>full set</span></h1><br>
+            <img src="hs.png" alt="" class="of"><br><br>
+            <h2>₹4,000 + ₹1,500 + ₹100 + ₹400 = ₹6,000</h2>
+            <h2 class="ff">Use code <span>Hotel100</span> for 50% offer</h2><br>
+            <fieldset>
+                <a href="bn.html"><button>Buy Now</button></a>
+                </fieldset>
+        </fieldset><br>
+        <hr id="game"><br>
+        <h1 class="ff"><b>Gaming</b></h1><br>
+        <hr><br>
+        <fieldset>
+        <h1 class="ff">The <span>cheecky</span> table</h1>
+        <img src="gt.png" alt="" class="off"><br>
+        <h2 class="ff"><strike>₹15,000</strike> <br> ₹13,000 special offer for Studio <span>Eight</span> users.</h2><br>
+        <fieldset>
+        <a href="bn.html"><button>Buy Now</button></a>
+        </fieldset>
+        </fieldset><br>
+        <hr><br>
+        <fieldset>
+            <h1 class="ff">The <span>Devoko dragon</span> chair</h1>
+            <img src="gc.png" alt="" class="off"><br>
+            <h2 class="ff"><strike>₹10,500</strike> <br> ₹9,500 special offer for Studio <span>Eight</span> users.</h2><br>
+            <fieldset>
+                <a href="bn.html"><button>Buy Now</button></a>
+                </fieldset>
+        </fieldset><br>
+        <hr><br>
+        <fieldset>
+            <h1 class="ff">The <span>redfire</span> recto</h1>
+            <img src="gh.png" alt="" class="off">
+            <h2 class="ff"><strike>₹2,000</strike> <br> ₹1,500 special offer for Studio <span>Eight</span> users.</h2><br>
+            <fieldset>
+                <a href="bn.html"><button>Buy Now</button></a>
+                </fieldset>
+        </fieldset><br>
+        <hr><br>
+        <fieldset>
+            <h1 class="ff">The <span>evo fox</span> keybord and mouse</h1>
+            <img src="gkm.png" alt="" class="off">
+            <h2 class="ff"><strike>₹3,000</strike> <br> ₹2,400 special offer for Studio <span>Eight</span> users.</h2><br>
+            <fieldset>
+                <a href="bn.html"><button>Buy Now</button></a>
+                </fieldset>
+        </fieldset><br>
+        <hr><br>
+        <fieldset>
+            <h1 class="ff">Exclusive offer on buying <span>full set</span></h1><br>
+            <img src="https://helios-i.mashable.com/imagery/articles/05hs5b94N3UMHtZtBA30GFK/hero-image.fill.size_1200x900.v1623388505.jpg" alt="" class="of"><br><br>
+            <h2>₹13,000 + ₹9,500 + ₹1,500 + ₹2,400 = ₹26,400</h2>
+            <h2 class="ff">Use code <span>Hotel100</span> for 50% offer</h2><br>
+            <fieldset>
+                <a href="bn.html"><button>Buy Now</button></a>
+                </fieldset>
+        </fieldset><br>
+        <hr><br>
+        <marquee>Thank you😁😉</marquee><br>
+        <hr><br>
+        <img src="circle.png" alt="" class="small-icon4">
+    </div>
+</body>
+<script>
+    function btn1() {
+     document.getElementById("pic1").src ="pic1.png"
+ }
+ function btn2() {
+     document.getElementById("pic1").src ="pic2.png"
+ }
+ function btn3() {
+     document.getElementById("pic1").src ="pic3.png"
+ }
+ function btn4() {
+     document.getElementById("pic1").src ="pic4.png"
+ }
+</script>
+</html>
